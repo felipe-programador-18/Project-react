@@ -1,5 +1,7 @@
 import React from 'react'
 
-const ManageAll =  React.createContext()
+const Manageallusers =  React.createContext({allusers: [],
+    updatingpeople: (id) => null})
 
-export default ManageAll = ManageAll.Provider()
+export const ManageProvides = Manageallusers.Provider
+export default Manageallusers
